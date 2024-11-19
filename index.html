@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>Supplementary Material: Tellman et al., in review </title>
+	<meta name="viewport" content="width=1380" />
+	<script src="lib/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="lib/underscore-min.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/vto0frl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="css/roi7.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />	
+</head>
+
+<body>
+	<div id="header">
+		<h1><img src="img/graph_icon20.png"/> Supplementary Material: Tellman et al., in review <span id="proj1" class="projectName"></span> 
+			<span id="proj2" class="projectDropdown2"></span></h1>
+	</div> <!-- End header -->
+
+	<div id="dashboard">
+		<div class="roiMetrics widget">
+
+			<div id="population" class="dotGroup"> <h2>Population</h2> </div>
+			<div id="sourceWater" class="dotGroup"> <h2>Urban Water Sources</h2> </div>
+			<div id="qualityRisk" class="dotGroup"> <h2>Water Quality Risk</h2> </div>
+			<div id="qualityOpportunity" class="dotGroup"> <h2>Source Watershed Conservation Solutions</h2>
+			<div id="roi" class="dotGroup"></div>
+			<p>The following metrics explore the potential to improve water quality through specific conservation activities. The values represent the number of hectares needed to achieve a 10% improvement in water quality. Lower values (displayed on the right) represent greater opportunity because a smaller area is needed to achieve the targeted change.</p> </div>
+
+			<h2>Flood Mitigation</h2>
+				<h4>Riverine Flood Mitigation</h4>
+				<div id="riverine-flood" class="dotGroup"></div>
+					<h5>Watershed Response Sensitivity <div id="wrs" class="tooltip" style="opacity: 0;">Yeah</div></h5> 
+					<p>Five physical watershed characteristics that represent a watershed’s natural propensity to respond to investments in natural infrastructure.</p>
+					<div id="response" class="dotGroup"> </div>
+
+					<h5>Scope of Intervention</h5>
+					<p>Six indicators that represent availability of restoration and preservation activities that mitigate flooding</p>			
+					<div id="intervention-scope" class="dotGroup"></div>
+
+
+				<h4>Stormwater Flood Mitigation</h4>
+					<div id="stormwater-flood" class="dotGroup">  </div>
+
+					<h5>Stormwater Flood Mitigation Opportunity Index</h5>
+					<p>This represents an index comprised of five indicators (comprising both stormwater risk and mitigation opportunity) to assess where natural infrastructure could be most readily sited and effective in mitigating stormwater flooding for each city.</p>
+
+					<h6>Stormwater Flood Risk</h6>
+					<div id="stormwater-flood-risk" class="dotGroup"> </div>
+
+					<h6>Effectiveness of Green Infrastructure Interventions</h6>
+					<div id="green-infrastructure" class="dotGroup"> </div>
+
+			<div id="references">
+				<p><strong>References:</strong> Please refer to the Works Cited section in the main text</p>
+			</div>			
+
+		</div> <!-- End roiMetrics widget -->
+
+		<div class="projectInfo widget">
+			<div id="map" class="">
+				<h2>Regional Comparison</h2>
+				<p><select id="mapdotsize" class="map dropdown"> </select> </p>
+			</div>
+
+			<div id="chart" class="">
+				<h2>Explore Metrics</h2>
+				<p class="description">Select variables using dropdowns below
+					to plot cities. Dotted lines represent median values for
+					each variable. </p>
+				<div id="scatterplot"> </div>
+				<div id="controls">
+					<p>X-Axis: &nbsp; <select id="xaxis" class="scatterplot dropdown"> </select> </p>
+					<p>Y-Axis: &nbsp; <select id="yaxis" class="scatterplot dropdown"> </select> </p>
+					<!-- <p>Dot Size: Costs <select id="dotsize" class="scatterplot dropdown"> </select> </p> -->
+				</div>
+			</div> <!-- End scatterplot widget -->
+		</div> <!-- End projectInfo column -->
+
+	<div id="dashboard_meta">
+		<h2>Dashboard Options</h2>
+		<p>To highlight a single city, click a dot on one of the graphs or map, or select from the dropdown below. To compare two cities, select with the dropdowns. A third city can be displayed by clicking on its dot in the map.</p>
+		<div class="dropdown">
+<!-- 				<span class="legend proj1"></span> -->
+				<p><img src="img/dot_orange.png"/><select id="projectDropdown" class="projDropdown"></select></p>
+
+<!-- 				<span class="legend proj2"></span> -->
+			<p><img src="img/dot_blue.png"/><select id="projectDropdown2" class="projDropdown2"></select></p>
+
+		</div>
+		<!-- 
+		<form action="">
+			<input type="checkbox" name="dataControl" value="highlight" id="highlight_checkbox">Highlight LACC Priority Cities<br>			
+		</form>
+		-->
+		<p><a href="#" id="resetSelection">Reset Selection</a></p>
+	</div> <!-- End dashboard_meta -->
+
+	</div> <!-- End dashboard -->
+
+	<script type="text/javascript" src="roi.map.variabledots.ws.js"></script>
+	<script type="text/javascript" src="app/roi.chart.dotplot.simple.refactor.js"></script> 
+	<!-- <script type="text/javascript" src="../app/roi.chart.dotplot.multi.js"></script> -->			
+	<script type="text/javascript" src="app/roi.chart.scatterplot.js"></script>
+	<script type="text/javascript" src="app/roi.ui.js"></script>
+	<script type="text/javascript" src="app/roi.helpers.js"></script>
+	<script type="text/javascript" src="config.js"></script>				
+	<script type="text/javascript" src="init.js"></script>
+<div style="clear: both;"></div>
+<div id="footer">
+
+</body>
+</html>

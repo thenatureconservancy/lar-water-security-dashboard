@@ -1,0 +1,122 @@
+body                    {margin: 0; padding: 0; background: url(img/seamlesstexture29_500.jpg); font-size: 14px;
+												font-family: "franklin-gothic-urw", calibri, helvetica, "helvetica neue", verdana, sans-serif ; min-width: 1150px;}
+
+/*div#header              {float: left; width: 100%; background: #527FAD; margin-bottom: 10px; border-bottom: 1px solid #05294E;
+													box-shadow: 2px 2px 2px 0 #ccc; background: #000; background: #046156;}*/
+div#header              {float: left; width: 100%; margin-bottom: 0px; border-bottom: 0px solid #05294E;
+                          }                          
+div#footer 							{float: left; width: 100%; height: 300px; clear: both; margin-top: 20px;}
+div#dashboard           {float: left;width: 1320px;}
+div.roiMetrics          {float: left;width: 560px; border-right: 0px solid #ccc;}
+div.projectInfo         {float: left;width: 450px;}
+.widget 								{margin: 10px; background: #fff; border-radius: 3px; box-shadow: 2px 2px 2px 0 #ccc;
+													}
+div#dashboard_meta 			{float: left; width: 240px; margin-left: 10px;}
+div#dashboard_meta h2   {margin-left: 0;}  
+div#dashboard_meta p   	{margin: 5px 0 10px 0;}
+div#references          {margin: 30px 10px 10px 10px; padding-top: 10px; border-top: 0px solid #ccc; float: left; display: block;}
+form    								{font-size: 14px; color: #666;}
+input 									{margin: 10px 5px 5px 0; }
+
+div.dropdown               {float: left; margin: 10px 10px 0px 0; width: 100%;}
+
+/* General STyles */
+h1, h2              {/*font-family: "myriad pro", helvetica, arial, georgia, Oswald, "League Gothic", arial;*/ 
+                        font-size: 30px; margin: 10px 10px 0px 20px; padding-bottom: 0px; font-weight: bold; 
+                      	}
+
+/*h1                      {color: #fff; text-shadow: 1px 1px 1px #000; font-family: "franklin-gothic-urw-cond", calibri, helvetica, sans-serif; font-weight: 400;}*/
+h1                      {color: #000; font-family: "franklin-gothic-urw-cond", calibri, helvetica, "helvetica neue", verdana, sans-serif}
+h2                      {font-size: 22px; margin: 10px 10px 0 10px; clear: both; font-family: "franklin-gothic-urw-cond", calibri, helvetica, sans-serif; font-weight: 400; 
+													text-transform: uppercase; /*letter-spacing: 1px;*/ font-weight: 700;}
+h3                      {vertical-align: bottom;font-size: 13px;float: right;width: 220px;text-align: left;font-weight: normal;
+                          margin: 10px 0px 0 0px; clear: both;}
+h4, h5, h6                  {margin-left: 10px; font-size: 18px; margin: 10px;}
+h5                      {font-size: 16px; font-weight: normal; font-style: italic;}
+h6                      {font-size: 14px; font-weight: normal;}
+p         							{font-size: 14px; line-height: 1.3em; color: #666; margin: 0px 20px 10px 10px; clear: both;}
+a:link, a:visited                  {text-decoration: none; color: #285e8e; margin-bottom: 2px; border-bottom: 1px dotted ;}
+a:hover                 {border-bottom: 1px solid #285e8e;}
+p.description           {margin-right: 100px;}
+select:focus 						{outline: none; }
+span.projectName        {color: #f0f0f0; color: #666; font-size: 22px;font-weight: normal;padding-left: 10px;}
+
+/*select                  {float: left;}*/
+#dashboard_meta img     {margin: 0 7px 0 0; float: left;}
+select.projDropdown, select.projDropdown2  {float: left; margin: 0 0 10px; font-size: 12px; padding: 0px;}
+
+a#resetSelection, a#highlightHistorical           {padding: 5px 7px; background: #428bca; color: #fff; font-weight: 400; border-radius: 3px; 
+                            text-decoration: none; border: 1px solid #357ebd; margin-bottom: 10px; float: left;}
+
+a:hover#resetSelection, a:hover#highlightHistorical     {background: #285e8e; box-shadow: -2px 2px 2px #ccc;}
+
+/* Project Stats */
+div.projectStats        {float: left; width: 100%; background: #fafafa; padding: 0px; border-radius: 5px; 
+                        border: 1px solid #ccc;}
+
+
+svg                     {border: 0px solid #ccc;margin: 0 0 0px 0;}
+
+.legend                 {width: 10px; height: 10px; background: #000; float: left; margin-right: 5px; border: 1px solid #000; display: block;}
+
+/* roiMetrics  -------------------------- */
+select#roi              {margin-top: 10px;}
+
+/* projectInfo  -------------------------- */
+
+/*div.projectInfo h2      {margin-top: 20px; float: left;}*/
+
+/* Dot Plot  -------------------------- */
+.dotGroup               {float: left; padding-bottom: 0px; margin-bottom: 10px; border-bottom: 0px solid #ccc;}
+.dotPlot                {float: left; border-bottom: 1px solid #fafafa; padding-bottom: 0px; border: 0px solid #ccc;}
+
+.dotPlotAxis path,
+.dotPlotAxis line       {fill: none;stroke: lightgrey;shape-rendering: crispEdges;}
+.dotPlotAxis text       {font-size: 11px; text-anchor: left !important;}
+
+.tooltip                {background-color: #fff;border: 1px solid #ccc;border-radius: 3px;padding: 5px 8px;
+                          font-size: 14px; line-height: 1.3em; position: absolute; pointer-events: none; max-width: 30%;}
+.projTitle              {font-weight: bold;}
+table   								{font-size: 13px; margin: 0; padding: 0; border: 0; border-spacing: 0;}
+table tr  							{padding: 5px 0; margin: 0;}
+table td 								{padding: 0 15px 0 0; }
+
+circle:hover            {fill: red !important; stroke: #000; stroke-width: 1px; opacity: 1;}
+
+/* Grouped plots -------------------------- */ 
+#myMulti                {border: 0px solid #ccc; float: left; clear: both; /*background: #ecede7;*/}
+#childDiv               {float: left; /*background: #ecede7;*/ background: #ffc;}
+span#expandText        {float: right; position: relative; right: 0px; top: 0px; margin: -10px 0px 0 0; 
+                        clear: both; font-size: 12px; color: #666; width: 70px; font-family: calibri;}
+
+
+/* ROI dot plot -------------------------- */ 
+#ecology p									{margin: 10px 0 10px 10px;}
+
+
+/* Map  -------------------------- */
+#map                    {float: left;stroke: #fff;stroke-width: 1.5px;stroke-linejoin: round;}
+.map-land 							{fill: #ecede7; -webkit-svg-shadow: 0 0 1px #ccc;}
+/*div #map       {border-bottom: 1px solid #ccc;}*/
+
+/* Scatterplot  -------------------------- */
+div#chart               {float: left;clear: both; border: 0px solid #ccc;}
+
+/*#controls               {float: left; margin: 0 20px 20px 10px; clear: both; border: 0px solid #333;}*/
+#controls               {float: left; margin: 20px 20px 20px 10px; clear: both; border: 0px solid #333;}
+.axis.label             {font-weight: bold; font-size: 13px;}
+.axis path,.axis line   {fill: none; stroke: darkgrey; shape-rendering: crispEdges;}
+.axis text              {fill: black; font-size: 11px;}
+
+.xMedian line           {stroke: darkgrey; fill: #000; stroke-width: 6;}
+
+
+/* Dot Colors */
+
+circle, .defaultDot 	  {fill: darkgrey !important; stroke-width: 1 !important; opacity: 0.7 !important; stroke: #fff !important;}
+.activeDot              {fill: #d9534f !important; stroke-width: 2 !important; opacity: 1 !important; stroke: #d9534f !important;}
+.projectDropdown        {fill: #ed9c28 !important; stroke-width: 2 !important; opacity: 1 !important; stroke: #ed9c28 !important;}
+.projectDropdown2       {fill: #39b3d7 !important; stroke-width: 2 !important; opacity: 1 !important; stroke: #39b3d7 !important;}
+/*.highlightCheckbox      {fill: darkgrey !important; stroke-width: 1 !important; opacity: 0.7 !important; stroke: #fff !important;}*/
+.ignoreDot 							{display: none !important;}
+.hide 									{display: none !important;}
